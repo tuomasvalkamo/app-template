@@ -1,0 +1,134 @@
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
+
+// Variable overrides
+$c1: #283149;
+$c2: #404b69;
+$c3: #f73859;
+$c4: #dbedf3;
+$c5: #1b243c;
+
+$theme-colors: (
+  'primary': $c3
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1400px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1360px
+);
+
+$spacer: 3.125rem;
+
+$spacers: (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 2.5),
+    6: ($spacer * 3)
+);
+
+$grid-gutter-width: 60px;
+
+$font-family-base: "Rubik", sans-serif;
+$font-size-base: 0.875rem;
+$line-height-base: 1.7;
+
+$headings-margin-bottom: $spacer * .4;
+$headings-font-family: "Oxygen", sans-serif;
+$headings-font-weight: 700;
+$headings-line-height: 1.4;
+$headings-color: $c3;
+$h1-font-size: $font-size-base * 3.5;
+$h2-font-size: $font-size-base * 2.5;
+$h3-font-size: $font-size-base * 1.75;
+
+$input-btn-padding-y-sm: 0.25rem;
+$input-btn-padding-x-sm: 0.5rem;
+
+$input-btn-padding-y: 0.75rem;
+$input-btn-padding-x: 2rem;
+
+$input-btn-padding-y-lg: 1.25rem;
+$input-btn-padding-x-lg: 2rem;
+
+$input-btn-font-size-lg: $font-size-base;
+$input-btn-line-height-lg: $line-height-base;
+
+// Custom css
+body { color: $c4 !important; background-color: $c1 !important; font-size: 1rem !important; }
+a { transition: 200ms; }
+
+.base-row > .col { width: 100% !important; }
+
+.btn {
+    text-transform: uppercase;
+    font-weight: 700 !important;
+   font-size:  0.75rem !important;
+   letter-spacing: 2px;
+   border-radius: 0 !important;
+}
+
+.hero-img {
+    max-height: 400px;
+}
+
+.services-cards {
+    .btn {
+        width: 100% !important;
+    }
+}
+
+.card {
+    background-color: $c2 !important;
+    border-top: 5px solid $c4 !important;
+    border-radius: 0 !important;
+    padding: 20px !important;
+}
+
+.light-bg {
+    background-color: $c2;
+}
+
+.dark-bg {
+    background-color: $c5;
+}
+
+.img-full {
+    max-width: 100%;
+}
+
+.img-med {
+    max-width: 85%;
+}
+
+.img-shadow {
+    box-shadow: 50px 50px 0 0 $c3;
+    margin-bottom: 50px;
+}
+
+.footer { 
+    ul {
+        padding-left: 0;
+        li {
+            list-style: none;
+        }
+    }
+
+    .madeby {
+        font-size: 0.875rem;
+    }
+}
+
+// Bootstrap Sass files
+@import 'node_modules/bootstrap/scss/bootstrap';
